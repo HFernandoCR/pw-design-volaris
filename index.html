@@ -14,11 +14,17 @@
             <div class="logo">
                 <img src="images/volaris.jpeg" alt="Volaris Logo">
             </div>
-            <nav class="nav-superior">
-                <a href="#" class="idioma-moneda">Español / $ MXN <i class="fas fa-chevron-down"></i></a>
-                <a href="#" class="registro">Regístrate</a>
-                <a href="#" class="iniciar-sesion">Iniciar sesión</a>
-            </nav>
+           <nav class="nav-superior">
+  <a href="#" class="lang-currency">Español / $ MXN <i class="fas fa-chevron-down"></i></a>
+  <a href="#" class="register">Regístrate</a>
+  <a href="#" class="login">Iniciar sesión</a>
+
+  <!-- Iconos móviles -->
+  <a href="#" class="icon-user" aria-label="Cuenta"><i class="fas fa-user"></i></a>
+  <a href="#" class="icon-menu" aria-label="Menú"><i class="fas fa-bars"></i></a>
+    </nav>
+
+
         </div>
         <nav class="nav-principal">
             <ul>
@@ -39,48 +45,48 @@
 
     <main class="contenido-principal">
         <section class="busqueda-vuelos">
-            <div class="contenedor-formulario-busqueda">
-                <div class="pestanas-tipo-vuelo">
+            <div class="search-form-container">
+                <div class="flight-type-tabs">
                     <button class="activo">Viaje redondo</button>
                     <button>Viaje sencillo</button>
                 </div>
                 <div class="formulario-busqueda">
                     <div class="grupo-campo">
                         <label>Origen</label>
-                        <input type="text" value="Cd. México (Tod..." class="campo-origen">
+                        <input type="text" value="Cd. México (Tod..." class="input-origin">
                     </div>
                     <button class="boton-intercambiar"><i class="fas fa-exchange-alt"></i></button>
                     <div class="grupo-campo">
                         <label>Selecciona un destino</label>
-                        <input type="text" value="---" class="campo-destino">
+                        <input type="text" value="---" class="input-destination">
                     </div>
-                    <div class="grupo-campo grupo-fecha">
+                    <div class="grupo-campo date-group">
                         <label>Salida</label>
-                        <input type="text" value="Lun, 3 Nov, 2025" class="campo-fecha">
+                        <input type="text" value="Lun, 3 Nov, 2025" class="input-date">
                     </div>
-                    <div class="grupo-campo grupo-fecha">
+                    <div class="grupo-campo date-group">
                         <label>Regreso</label>
-                        <input type="text" value="Jue, 6 Nov, 2025" class="campo-fecha">
+                        <input type="text" value="Jue, 6 Nov, 2025" class="input-date">
                     </div>
-                    <div class="grupo-campo grupo-pasajeros">
+                    <div class="grupo-campo passengers-group">
                         <label>Pasajeros</label>
                         <select>
                             <option>1 Adulto</option>
                         </select>
                     </div>
-                    <div class="grupo-campo codigo-promo">
+                    <div class="grupo-campo promo-code">
                         <label>¿Tienes un código de promoción? (Opcional)</label>
                         <input type="text">
                     </div>
                     <div class="acciones-formulario">
-                        <button class="boton-vuelo-hotel"><i class="fas fa-bed"></i> Vuelo + Hotel</button>
-                        <button class="boton-buscar-vuelos">Buscar vuelos <i class="fas fa-arrow-right"></i></button>
+                        <button class="btn-vuelo-hotel"><i class="fas fa-bed"></i> Vuelo + Hotel</button>
+                        <button class="btn-buscar-vuelos">Buscar vuelos <i class="fas fa-arrow-right"></i></button>
                     </div>
                 </div>
             </div>
-            <div class="banner-promo">
+            <div class="promo-banner">
                 <img src="images/promocion.jpeg" alt="Promoción Buen Fin">
-                <div class="indicadores-banner">
+                <div class="banner-indicators">
                     <button class="indicador activo"></button>
                     <button class="indicador"></button>
                     <button class="indicador"></button>
@@ -93,7 +99,7 @@
             <div class="opciones-pago">
                 <div class="pagos-tarjeta">
                     <h3>Tarjeta de crédito, tarjeta de débito y pago electrónico</h3>
-                    <div class="iconos-pago">
+                    <div class="payment-icons">
                         <img src="images/visa.jpeg" alt="Visa">
                         <img src="images/mastercard.jpeg" alt="Mastercard">
                         <img src="images/amex.jpeg" alt="Amex">
@@ -104,7 +110,7 @@
                 </div>
                 <div class="pagos-efectivo">
                     <h3>Efectivo en cualquiera de las sucursales participantes</h3>
-                    <div class="iconos-pago">
+                    <div class="payment-icons">
                         <img src="images/oxxo.jpeg" alt="Oxxo">
                         <img src="images/eleven.jpeg" alt="7 Eleven">
                         <img src="images/walmart.jpeg" alt="Walmart">
@@ -121,7 +127,7 @@
                 </div>
                 <h3>altitude</h3>
                 <p>Ahora puedes acumular puntos por todas tus compras. ¡Vuela y llega más alto!</p>
-                <button class="boton-suscribir">Inscríbete ahora</button>
+                <button class="btn-subscribe">Inscríbete ahora</button>
             </div>
             <div class="tarjeta-suscripcion">
                 <div class="icono-tarjeta">
@@ -129,7 +135,7 @@
                 </div>
                 <h3>Pase Anual</h3>
                 <p>Vuela todo lo que puedas por un año.</p>
-                <button class="boton-suscribir">Inscríbete ahora</button>
+                <button class="btn-subscribe">Inscríbete ahora</button>
             </div>
             <div class="tarjeta-suscripcion">
                 <div class="icono-tarjeta">
@@ -137,7 +143,7 @@
                 </div>
                 <h3>v.pass</h3>
                 <p>Un viaje te espera cada mes. v.pass, tu suscripción de vuelos.</p>
-                <button class="boton-suscribir">Suscríbete ahora</button>
+                <button class="btn-subscribe">Suscríbete ahora</button>
             </div>
             <div class="tarjeta-suscripcion">
                 <div class="icono-tarjeta">
@@ -145,7 +151,7 @@
                 </div>
                 <h3>INVEX</h3>
                 <p>Acumula pesos para comprar tus vuelos, ¡no millas ni puntos! Además, obtén equipaje gratis y meses sin intereses.</p>
-                <button class="boton-suscribir">Solicita tu tarjeta</button>
+                <button class="btn-subscribe">Solicita tu tarjeta</button>
             </div>
         </section>
 
@@ -198,7 +204,7 @@
             </div>
         </div>
         <div class="contenido-pie-pagina">
-            <div class="columna-pie-pagina">
+            <div class="footer-column">
                 <h4>Nuestras rutas</h4>
                 <ul>
                     <li><a href="#">Vuelos a Aguascalientes</a></li>
@@ -222,7 +228,7 @@
                 </ul>
                 <a href="#" class="ver-todas-rutas">Ver todas las rutas</a>
             </div>
-            <div class="columna-pie-pagina">
+            <div class="footer-column">
                 <h4>Información para tu viaje y derechos de los pasajeros</h4>
                 <ul>
                     <li><a href="#">FlexiTicket</a></li>
@@ -251,7 +257,7 @@
                 </ul>
                 <a href="#" class="ver-mas">Ver todo</a>
             </div>
-            <div class="columna-pie-pagina">
+            <div class="footer-column">
                 <h4>Sobre Volaris</h4>
                 <ul>
                     <li><a href="#">Somos la aerolínea de ultra-bajo costo con vuelos en México, Estados Unidos, Centroamérica y Sudamérica.</a></li>
@@ -265,7 +271,7 @@
                 </ul>
                 <a href="#" class="ver-mas">Más sobre Volaris</a>
             </div>
-            <div class="columna-pie-pagina">
+            <div class="footer-column">
                 <h4>Descarga nuestra aplicación</h4>
                 <div class="enlaces-app">
                     <a href="#"><img src="images/google-play.svg" alt="Google Play"></a>
