@@ -26,13 +26,13 @@ h2, h3, h4 {
     margin-bottom: 15px;
 }
 
-.header {
+.encabezado {
     background-color: #fff;
     border-bottom: 1px solid #eee;
     padding: 10px 0;
 }
 
-.header-top {
+.encabezado-superior {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -46,18 +46,18 @@ h2, h3, h4 {
     width: auto;
 }
 
-.top-nav a {
+.nav-superior a {
     margin-left: 20px;
     font-size: 14px;
     color: #666;
 }
 
-.top-nav .lang-currency {
+.nav-superior .idioma-moneda {
     font-weight: 500;
     color: #444;
 }
 
-.top-nav .login {
+.nav-superior .iniciar-sesion {
     background-color: #9c27b0;
     color: #fff;
     padding: 8px 15px;
@@ -65,38 +65,38 @@ h2, h3, h4 {
     font-weight: 600;
 }
 
-.main-nav {
+.nav-principal {
     background-color: #fff;
     border-bottom: 1px solid #eee;
     padding: 0 20px;
 }
 
-.main-nav ul {
+.nav-principal ul {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     align-items: center;
 }
 
-.main-nav li {
+.nav-principal li {
     padding: 15px 0;
     margin-right: 25px;
     font-size: 15px;
     font-weight: 500;
 }
 
-.main-nav li a {
+.nav-principal li a {
     color: #555;
     position: relative;
     padding-bottom: 15px;
 }
 
-.main-nav li a.active {
+.nav-principal li a.activo {
     color: #9c27b0;
     font-weight: 600;
 }
 
-.main-nav li a.active::after {
+.nav-principal li a.activo::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -106,17 +106,17 @@ h2, h3, h4 {
     background-color: #9c27b0;
 }
 
-.main-nav .separator {
+.nav-principal .separador {
     flex-grow: 1;
 }
 
-.main-content {
+.contenido-principal {
     max-width: 1200px;
     margin: 20px auto;
     padding: 0 20px;
 }
 
-.flight-search {
+.busqueda-vuelos {
     display: flex;
     background-color: #fff;
     border-radius: 8px;
@@ -125,18 +125,18 @@ h2, h3, h4 {
     overflow: hidden;
 }
 
-.search-form-container {
+.contenedor-formulario-busqueda {
     flex: 2;
     padding: 30px;
 }
 
-.flight-type-tabs {
+.pestanas-tipo-vuelo {
     margin-bottom: 25px;
     border-bottom: 1px solid #eee;
     display: flex;
 }
 
-.flight-type-tabs button {
+.pestanas-tipo-vuelo button {
     background: none;
     border: none;
     padding: 10px 20px;
@@ -147,11 +147,11 @@ h2, h3, h4 {
     position: relative;
 }
 
-.flight-type-tabs button.active {
+.pestanas-tipo-vuelo button.activo {
     color: #9c27b0;
 }
 
-.flight-type-tabs button.active::after {
+.pestanas-tipo-vuelo button.activo::after {
     content: '';
     position: absolute;
     bottom: -1px;
@@ -161,34 +161,34 @@ h2, h3, h4 {
     background-color: #9c27b0;
 }
 
-.search-form {
+.formulario-busqueda {
     display: grid;
     grid-template-columns: 1fr 30px 1fr;
     gap: 20px;
 }
 
-.search-form .input-group {
+.formulario-busqueda .grupo-campo {
     display: flex;
     flex-direction: column;
     position: relative;
     grid-column: span 1;
 }
 
-.search-form .input-group:nth-child(1) { grid-column: 1 / 2; }
-.search-form .input-group:nth-child(3) { grid-column: 3 / 4; }
-.search-form .input-group:nth-child(4) { grid-column: 1 / 2; }
-.search-form .input-group:nth-child(5) { grid-column: 3 / 4; }
-.search-form .input-group:nth-child(6) { grid-column: 1 / 2; }
-.search-form .input-group:nth-child(7) { grid-column: 3 / 4; }
+.formulario-busqueda .grupo-campo:nth-child(1) { grid-column: 1 / 2; }
+.formulario-busqueda .grupo-campo:nth-child(3) { grid-column: 3 / 4; }
+.formulario-busqueda .grupo-campo:nth-child(4) { grid-column: 1 / 2; }
+.formulario-busqueda .grupo-campo:nth-child(5) { grid-column: 3 / 4; }
+.formulario-busqueda .grupo-campo:nth-child(6) { grid-column: 1 / 2; }
+.formulario-busqueda .grupo-campo:nth-child(7) { grid-column: 3 / 4; }
 
-.search-form .input-group label {
+.formulario-busqueda .grupo-campo label {
     font-size: 13px;
     color: #777;
     margin-bottom: 5px;
 }
 
-.search-form .input-group input,
-.search-form .input-group select {
+.formulario-busqueda .grupo-campo input,
+.formulario-busqueda .grupo-campo select {
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 10px 12px;
@@ -200,18 +200,18 @@ h2, h3, h4 {
     background-color: #fff;
 }
 
-.search-form .input-group input:focus,
-.search-form .input-group select:focus {
+.formulario-busqueda .grupo-campo input:focus,
+.formulario-busqueda .grupo-campo select:focus {
     outline: none;
     border-color: #9c27b0;
 }
 
-.search-form .input-group input.input-origin,
-.search-form .input-group input.input-destination {
+.formulario-busqueda .grupo-campo input.campo-origen,
+.formulario-busqueda .grupo-campo input.campo-destino {
     font-weight: 500;
 }
 
-.search-form .input-group select {
+.formulario-busqueda .grupo-campo select {
     padding-right: 30px; 
     background-image: url('data:image/svg+xml;utf8,<svg fill="%23666666" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
     background-repeat: no-repeat;
@@ -219,7 +219,7 @@ h2, h3, h4 {
     background-size: 20px;
 }
 
-.search-form .swap-button {
+.formulario-busqueda .boton-intercambiar {
     grid-column: 2 / 3;
     align-self: center;
     justify-self: center;
@@ -235,18 +235,18 @@ h2, h3, h4 {
     margin-top: 25px;
 }
 
-.search-form .swap-button:hover {
+.formulario-busqueda .boton-intercambiar:hover {
     background-color: #f0f0f0;
 }
 
-.form-actions {
+.acciones-formulario {
     grid-column: 1 / 4;
     display: flex;
     gap: 15px;
     margin-top: 25px;
 }
 
-.form-actions button {
+.acciones-formulario button {
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -256,37 +256,37 @@ h2, h3, h4 {
     transition: background-color 0.2s, color 0.2s;
 }
 
-.form-actions .btn-vuelo-hotel {
+.acciones-formulario .boton-vuelo-hotel {
     background-color: #f0f0f0;
     color: #555;
     flex: 1;
 }
 
-.form-actions .btn-vuelo-hotel:hover {
+.acciones-formulario .boton-vuelo-hotel:hover {
     background-color: #e0e0e0;
 }
 
-.form-actions .btn-buscar-vuelos {
+.acciones-formulario .boton-buscar-vuelos {
     background-color: #9c27b0;
     color: #fff;
     flex: 2;
 }
 
-.form-actions .btn-buscar-vuelos:hover {
+.acciones-formulario .boton-buscar-vuelos:hover {
     background-color: #8e24aa;
 }
 
-.form-actions button i {
+.acciones-formulario button i {
     margin-right: 8px;
 }
 
-.promo-banner {
+.banner-promo {
     flex: 1;
     position: relative;
     min-width: 350px;
 }
 
-.promo-banner img {
+.banner-promo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -294,7 +294,7 @@ h2, h3, h4 {
     border-bottom-right-radius: 8px;
 }
 
-.banner-indicators {
+.indicadores-banner {
     position: absolute;
     bottom: 15px;
     left: 50%;
@@ -303,7 +303,7 @@ h2, h3, h4 {
     gap: 8px;
 }
 
-.banner-indicators .indicator {
+.indicadores-banner .indicador {
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -313,13 +313,13 @@ h2, h3, h4 {
     padding: 0;
 }
 
-.banner-indicators .indicator.active {
+.indicadores-banner .indicador.activo {
     background-color: #fff;
 }
 
 
 /* Metodo de pago Hector */
-.payment-methods {
+.metodos-pago {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
@@ -327,57 +327,57 @@ h2, h3, h4 {
     margin-bottom: 40px;
 }
 
-.payment-methods h2 {
+.metodos-pago h2 {
     font-size: 24px;
     font-weight: 700;
     color: #333;
     margin-bottom: 25px;
 }
 
-.payment-options {
+.opciones-pago {
     display: flex;
     gap: 40px;
 }
 
-.card-payments,
-.cash-payments {
+.pagos-tarjeta,
+.pagos-efectivo {
     flex: 1;
 }
 
-.payment-options h3 {
+.opciones-pago h3 {
     font-size: 16px;
     font-weight: 600;
     color: #555;
     margin-bottom: 15px;
 }
 
-.payment-icons {
+.iconos-pago {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     margin-bottom: 15px;
 }
 
-.payment-icons img {
+.iconos-pago img {
     height: 35px;
     width: auto;
 }
 
-.more-info {
+.mas-info {
     color: #9c27b0;
     font-size: 14px;
     font-weight: 500;
 }
 
 /* Suscripción Rodrigo */
-.subscription-blocks {
+.bloques-suscripcion {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
     margin-bottom: 40px;
 }
 
-.subscription-card {
+.tarjeta-suscripcion {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
@@ -388,7 +388,7 @@ h2, h3, h4 {
     justify-content: space-between;
 }
 
-.subscription-card .card-icon {
+.tarjeta-suscripcion .icono-tarjeta {
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -400,21 +400,21 @@ h2, h3, h4 {
     overflow: hidden;
 }
 
-.subscription-card .card-icon img {
+.tarjeta-suscripcion .icono-tarjeta img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
 }
 
-.subscription-card h3 {
+.tarjeta-suscripcion h3 {
     font-size: 18px;
     font-weight: 700;
     color: #333;
     margin-bottom: 10px;
 }
 
-.subscription-card p {
+.tarjeta-suscripcion p {
     font-size: 14px;
     color: #777;
     line-height: 1.5;
@@ -422,7 +422,7 @@ h2, h3, h4 {
     flex-grow: 1;
 }
 
-.subscription-card .btn-subscribe {
+.tarjeta-suscripcion .boton-suscribir {
     background-color: #9c27b0;
     color: #fff;
     padding: 10px 20px;
@@ -435,19 +435,19 @@ h2, h3, h4 {
     width: 100%;
 }
 
-.subscription-card .btn-subscribe:hover {
+.tarjeta-suscripcion .boton-suscribir:hover {
     background-color: #8e24aa;
 }
 
 /* Additional Services Section (Image 4) */
-.additional-services {
+.servicios-adicionales {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 30px;
     margin-bottom: 40px;
 }
 
-.service-block {
+.bloque-servicio {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
@@ -455,7 +455,7 @@ h2, h3, h4 {
     text-align: center;
 }
 
-.service-block .service-icon {
+.bloque-servicio .icono-servicio {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -469,34 +469,34 @@ h2, h3, h4 {
     overflow: hidden; /* For cases like ya vas image */
 }
 
-.service-block .service-icon img {
+.bloque-servicio .icono-servicio img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.service-block h3 {
+.bloque-servicio h3 {
     font-size: 16px;
     font-weight: 700;
     color: #333;
     margin-bottom: 8px;
 }
 
-.service-block p {
+.bloque-servicio p {
     font-size: 13px;
     color: #777;
     line-height: 1.4;
 }
 
 /* Footer (Image 5 & 6) */
-.footer {
+.pie-pagina {
     background-color: #1a1a1a;
     color: #bbb;
     padding: 40px 20px 20px;
     font-size: 14px;
 }
 
-.footer-newsletter {
+.pie-pagina-boletin {
     max-width: 1200px;
     margin: 0 auto 40px;
     display: flex;
@@ -507,23 +507,23 @@ h2, h3, h4 {
     border-radius: 8px;
 }
 
-.footer-newsletter p {
+.pie-pagina-boletin p {
     font-size: 18px;
     font-weight: 500;
     color: #fff;
     margin: 0;
 }
 
-.footer-newsletter p strong {
+.pie-pagina-boletin p strong {
     color: #9c27b0;
 }
 
-.newsletter-form {
+.formulario-boletin {
     display: flex;
     gap: 10px;
 }
 
-.newsletter-form input {
+.formulario-boletin input {
     padding: 12px 15px;
     border: 1px solid #444;
     border-radius: 4px;
@@ -533,11 +533,11 @@ h2, h3, h4 {
     width: 250px;
 }
 
-.newsletter-form input::placeholder {
+.formulario-boletin input::placeholder {
     color: #888;
 }
 
-.newsletter-form button {
+.formulario-boletin button {
     background-color: #9c27b0;
     color: #fff;
     padding: 12px 20px;
@@ -549,11 +549,11 @@ h2, h3, h4 {
     transition: background-color 0.2s;
 }
 
-.newsletter-form button:hover {
+.formulario-boletin button:hover {
     background-color: #8e24aa;
 }
 
-.footer-content {
+.contenido-pie-pagina {
     max-width: 1200px;
     margin: 0 auto 40px;
     display: grid;
@@ -561,49 +561,49 @@ h2, h3, h4 {
     gap: 30px;
 }
 
-.footer-column h4 {
+.columna-pie-pagina h4 {
     color: #fff;
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 20px;
 }
 
-.footer-column ul {
+.columna-pie-pagina ul {
     margin-bottom: 15px;
 }
 
-.footer-column li {
+.columna-pie-pagina li {
     margin-bottom: 8px;
 }
 
-.footer-column a {
+.columna-pie-pagina a {
     color: #bbb;
     font-size: 13px;
     transition: color 0.2s;
 }
 
-.footer-column a:hover {
+.columna-pie-pagina a:hover {
     color: #fff;
 }
 
-.app-links {
+.enlaces-app {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-bottom: 25px;
 }
 
-.app-links img {
+.enlaces-app img {
     height: 40px; /* Adjust as needed */
     width: auto;
 }
 
-.social-links {
+.enlaces-sociales {
     display: flex;
     gap: 15px;
 }
 
-.social-links a {
+.enlaces-sociales a {
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -616,11 +616,11 @@ h2, h3, h4 {
     transition: background-color 0.2s;
 }
 
-.social-links a:hover {
+.enlaces-sociales a:hover {
     background-color: #9c27b0;
 }
 
-.view-all-routes, .view-more {
+.ver-todas-rutas, .ver-mas {
     display: inline-block;
     margin-top: 10px;
     color: #9c27b0;
@@ -628,7 +628,7 @@ h2, h3, h4 {
     font-size: 13px;
 }
 
-.footer-bottom {
+.pie-pagina-inferior {
     max-width: 1200px;
     margin: 0 auto;
     border-top: 1px solid #333;
@@ -640,48 +640,48 @@ h2, h3, h4 {
     color: #888;
 }
 
-.footer-bottom .legal-links a {
+.pie-pagina-inferior .enlaces-legales a {
     margin-left: 20px;
     color: #888;
 }
 
-.footer-bottom .legal-links a:hover {
+.pie-pagina-inferior .enlaces-legales a:hover {
     color: #fff;
 }
 
 
 /* Responsive Adjustments */
 @media (max-width: 992px) {
-    .flight-search {
+    .busqueda-vuelos {
         flex-direction: column;
     }
 
-    .promo-banner {
+    .banner-promo {
         min-width: unset;
         width: 100%;
         border-radius: 0 0 8px 8px;
     }
 
-    .promo-banner img {
+    .banner-promo img {
         border-top-right-radius: 0;
         border-bottom-left-radius: 8px;
     }
 
-    .search-form {
+    .formulario-busqueda {
         grid-template-columns: 1fr;
     }
 
-    .search-form .input-group:nth-child(1),
-    .search-form .input-group:nth-child(3),
-    .search-form .input-group:nth-child(4),
-    .search-form .input-group:nth-child(5),
-    .search-form .input-group:nth-child(6),
-    .search-form .input-group:nth-child(7),
-    .search-form .form-actions {
+    .formulario-busqueda .grupo-campo:nth-child(1),
+    .formulario-busqueda .grupo-campo:nth-child(3),
+    .formulario-busqueda .grupo-campo:nth-child(4),
+    .formulario-busqueda .grupo-campo:nth-child(5),
+    .formulario-busqueda .grupo-campo:nth-child(6),
+    .formulario-busqueda .grupo-campo:nth-child(7),
+    .formulario-busqueda .acciones-formulario {
         grid-column: 1 / 2;
     }
 
-    .search-form .swap-button {
+    .formulario-busqueda .boton-intercambiar {
         grid-column: 1 / 2;
         margin-top: 0;
         transform: rotate(90deg); /* Rotate for better visual on mobile */
@@ -689,97 +689,97 @@ h2, h3, h4 {
         height: 40px;
     }
 
-    .payment-options {
+    .opciones-pago {
         flex-direction: column;
     }
 
-    .footer-newsletter {
+    .pie-pagina-boletin {
         flex-direction: column;
         text-align: center;
         gap: 20px;
     }
 
-    .newsletter-form {
+    .formulario-boletin {
         flex-direction: column;
         width: 100%;
         max-width: 300px;
     }
 
-    .newsletter-form input {
+    .formulario-boletin input {
         width: calc(100% - 30px); /* Adjust for padding */
     }
 
-    .newsletter-form button {
+    .formulario-boletin button {
         width: 100%;
     }
 
-    .footer-content {
+    .contenido-pie-pagina {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .footer-bottom {
+    .pie-pagina-inferior {
         flex-direction: column;
         text-align: center;
         gap: 15px;
     }
 
-    .footer-bottom .legal-links {
+    .pie-pagina-inferior .enlaces-legales {
         display: flex;
         flex-direction: column;
         gap: 5px;
     }
 
-    .footer-bottom .legal-links a {
+    .pie-pagina-inferior .enlaces-legales a {
         margin-left: 0;
     }
 }
 
 @media (max-width: 768px) {
-    .main-nav ul {
+    .nav-principal ul {
         flex-wrap: wrap;
         justify-content: center;
     }
-    .main-nav li {
+    .nav-principal li {
         margin-right: 15px;
         padding: 10px 0;
     }
-    .main-nav .separator {
+    .nav-principal .separador {
         display: none;
     }
 
-    .subscription-blocks,
-    .additional-services {
+    .bloques-suscripcion,
+    .servicios-adicionales {
         grid-template-columns: 1fr;
     }
 
-    .footer-content {
+    .contenido-pie-pagina {
         grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 480px) {
-    .header-top {
+    .encabezado-superior {
         flex-direction: column;
         gap: 10px;
     }
-    .top-nav {
+    .nav-superior {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-    .top-nav a {
+    .nav-superior a {
         margin: 5px 10px;
     }
 
-    .search-form-container,
-    .payment-methods,
-    .subscription-card,
-    .service-block,
-    .footer-newsletter {
+    .contenedor-formulario-busqueda,
+    .metodos-pago,
+    .tarjeta-suscripcion,
+    .bloque-servicio,
+    .pie-pagina-boletin {
         padding: 20px;
     }
 
-    .payment-options {
+    .opciones-pago {
         gap: 20px;
     }
 }
