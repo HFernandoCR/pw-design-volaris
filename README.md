@@ -1,0 +1,1 @@
+Tuvimos que hacer esas correcciones porque, en el proceso de adaptar el sitio a diferentes tamaños de pantalla, nos dimos cuenta de que había reglas CSS que no estaban aplicándose en el momento adecuado o que estaban anidadas de una forma que no funcionaba correctamente
