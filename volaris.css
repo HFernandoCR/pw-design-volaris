@@ -650,6 +650,29 @@ h2, h3, h4 {
 }
 
 
+/* --- INICIO: Estilos Acordeón Footer --- */
+/* Esto es necesario para que el HTML <details> funcione bien */
+.columna-pie-pagina summary {
+    list-style: none; /* Oculta marcador por defecto */
+    cursor: default;  /* Cursor normal en desktop */
+}
+.columna-pie-pagina summary::-webkit-details-marker {
+    display: none; /* Oculta marcador en Webkit */
+}
+
+/* Forzamos a que esté "abierto" en desktop (pantallas > 768px) */
+/* Por esto no se puede "cerrar" en la vista de escritorio */
+@media (min-width: 769px) {
+    .columna-pie-pagina:not(:last-child) details > *:not(summary) {
+        display: block; /* Muestra el <ul> y enlaces */
+    }
+    .ver-todas-rutas, .ver-mas {
+        display: inline-block; /* Muestra los enlaces "ver más" */
+    }
+}
+/* --- FIN: Estilos Acordeón Footer --- */
+
+
 /* Responsive Adjustments */
 @media (max-width: 992px) {
     .busqueda-vuelos {
@@ -757,9 +780,72 @@ h2, h3, h4 {
         grid-template-columns: 1fr;
     }
 
+    /* --- INICIO: MODIFICACIONES ACORDEÓN PIE DE PÁGINA (IMAGEN 1 a 2) --- */
     .contenido-pie-pagina {
         grid-template-columns: 1fr;
+        gap: 0; /* Quitamos el espacio para el estilo de acordeón */
     }
+
+    /* Estilos para las columnas (excepto la última) */
+    .columna-pie-pagina:not(:last-child) {
+        border-bottom: 1px solid #333; /* Línea separadora */
+    }
+    
+    /* El <summary> (título) se vuelve clickeable */
+    .columna-pie-pagina:not(:last-child) summary {
+        cursor: pointer;
+        position: relative;
+        padding: 18px 0; /* Padding vertical */
+    }
+
+    /* Contenido (ul, enlaces) está oculto por defecto por <details> */
+    /* Solo le damos padding cuando está abierto */
+    .columna-pie-pagina:not(:last-child) details[open] > *:not(summary) {
+        padding-bottom: 18px;
+    }
+    
+    /* La flecha (▶) como en tus imágenes */
+    .columna-pie-pagina:not(:last-child) summary::after {
+        content: '\25B6'; /* Triángulo derecha */
+        font-size: 0.8em;
+        position: absolute;
+        /* Posicionamos la flecha ANTES del texto como en tu imagen */
+        left: 0; 
+        top: 50%;
+        transform: translateY(-50%);
+        transition: transform 0.2s;
+        color: #fff;
+        margin-right: 10px; /* Espacio entre la flecha y el texto */
+    }
+    
+    /* Movemos el texto del <h4> para dar espacio a la flecha */
+    .columna-pie-pagina:not(:last-child) summary h4 {
+        padding-left: 20px; /* Espacio para la flecha */
+        margin-bottom: 0; /* Quitamos margen en el summary */
+    }
+
+    /* La flecha cuando está abierto (▼) */
+    .columna-pie-pagina:not(:last-child) details[open] summary::after {
+        content: '\25BC'; /* Triángulo abajo */
+    }
+    
+    /* El contenido dentro del acordeón necesita padding */
+    .columna-pie-pagina:not(:last-child) details ul {
+        padding-left: 20px; /* Alinea la lista con el título */
+        padding-top: 15px; /* Espacio del título a la lista */
+    }
+    .columna-pie-pagina:not(:last-child) details .ver-todas-rutas,
+    .columna-pie-pagina:not(:last-child) details .ver-mas {
+        padding-left: 20px; /* Alinea el "ver más" con el título */
+    }
+
+
+    /* La última columna (apps) no es acordeón, solo le damos padding */
+    .columna-pie-pagina:last-child {
+        padding: 18px 0;
+        border-bottom: 1px solid #333; /* Añadimos borde también */
+    }
+    /* --- FIN: MODIFICACIONES ACORDEÓN PIE DE PÁGINA --- */
 }
 
 @media (max-width: 480px) {
